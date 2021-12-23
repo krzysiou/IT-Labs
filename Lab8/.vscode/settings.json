@@ -1,0 +1,17 @@
+{
+  "files.associations": {
+    "cmath": "cpp",
+    "bitset": "cpp",
+    "locale": "cpp",
+    "memory": "cpp",
+    "string": "cpp",
+    "iostream": "cpp",
+    "type_traits": "cpp",
+    "iosfwd": "cpp",
+    "__bit_reference": "cpp",
+    "algorithm": "cpp",
+    "__string": "cpp",
+    "ios": "cpp",
+    "typeinfo": "cpp"
+  }
+}
