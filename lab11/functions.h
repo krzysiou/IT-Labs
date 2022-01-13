@@ -39,6 +39,8 @@ class Abs {
     double operator()(double x) const;
 };
 
+//COS
+
 class Cos {
   public:
     Cos(const double x, const double y): _x(x), _y(y) {};
