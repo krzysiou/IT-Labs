@@ -3,11 +3,13 @@
 #include <functional>
 #include <initializer_list>
 
-//testing
+//To run the program, type 'make' and follow it by 'make run' while being in build directory.
+
 using namespace std;
 
 class MyNode {
   public:
+    MyNode(int value) : _next(nullptr), _value(value) {};
     int val(){return _value;}
     MyNode * _next;
     int _value;

@@ -1,17 +1,14 @@
 #include "MyList.h"
 
 MyList::MyList(int n){
+  cout << "KONST: Jednoparametrowy\n";
   _size = n;
   for(int i = 0; i < n; i++){
-    MyNode * temp = new MyNode;
-    temp->_next = nullptr;
-    temp->_value = i;
     if(i == 0){
-      _head = temp;
-      _tail = temp;
+      _head = _tail = new MyNode(i);
     } else {
-      _tail->_next = temp;
-      _tail = temp;
+      _tail->_next = new MyNode(i);
+      _tail = _tail->_next;
     }
   }
 }
@@ -22,15 +19,10 @@ MyList::MyList(const MyList& list) : MyList(){
   MyNode * temp = list._head->_next;
   for(int i = 0; i < list._size; i++){
       if(_head == nullptr){
-          MyNode * pivot = new MyNode;
-          pivot->_value = list._head->_value;
-          pivot->_next = nullptr;
-          _tail = _head = pivot;
+          _tail = _head = new MyNode(list._head->_value);
       }
       else{
-          _tail->_next = new MyNode;
-          _tail->_next->_value = temp->_value;
-          _tail->_next->_next = nullptr;
+          _tail->_next = new MyNode(temp->_value);
           temp = temp->_next;
           _tail = _tail->_next;
       }
@@ -51,16 +43,10 @@ MyList::MyList(std::function<int(MyNode *)> fun, int size){
     for(int i = 0; i < size; i++)
     {
         if(_tail == nullptr){
-          MyNode * temp = new MyNode;
-          temp->_value = fun(_tail);
-          temp->_next = nullptr;
-          _head = _tail = temp;
+          _head = _tail = new MyNode(fun(_tail));
         }
         else{
-          MyNode * temp = new MyNode;
-          temp->_value = fun(_tail);
-          temp->_next = nullptr;
-          _tail->_next = temp;
+          _tail->_next = new MyNode(fun(_tail));
           _tail = _tail->_next;
         }
     }
@@ -69,21 +55,13 @@ MyList::MyList(std::function<int(MyNode *)> fun, int size){
 MyList::MyList(std::initializer_list<int> list){
     _size = list.size();
     std::cout << "KONST: std::initializer_list\n";
-    const int * iterator = list.begin(); 
-    iterator++;
+    const int * iterator = list.begin() + 1; 
     _head = _tail = nullptr;
     for(int i = 0; i < _size; i++){
         if(_head == nullptr){
-          MyNode * temp = new MyNode;
-          temp->_value = *list.begin();
-          temp->_next = nullptr;
-          _tail = _head = temp;
-        }
-        else{
-          MyNode * temp = new MyNode;
-          temp->_value = *iterator;
-          temp->_next = nullptr;
-          _tail->_next = temp;
+          _tail = _head = new MyNode(*list.begin());
+        } else {
+          _tail->_next = new MyNode (*iterator);
           iterator++;
           _tail = _tail->_next;
         }
@@ -131,25 +109,22 @@ void MyList::print() const{
 MyList::~MyList(){
     std::cout << "DESTRUKTOR (rozmiar = " << _size << ")\n"; 
     if(_size != 0){
-        MyNode* temp2 = _head->_next;
+        MyNode * temp = _head->_next;
         while(_head != _tail){
             delete _head;
-            _head = temp2;
-            temp2 = temp2->_next;
+            _head = temp;
+            temp = temp->_next;
         }
         delete _head;
     }
 }
 
 void MyList::add(int n){
-  MyNode * temp = new MyNode;
-  temp->_value = n;
-  temp->_next = nullptr;
   _size += 1;
   if(!_head){
-    _head = _tail = temp;
+    _head = _tail = new MyNode(n);
   } else {
-    _tail->_next = temp;
-    _tail = temp;
+    _tail->_next = new MyNode(n);
+    _tail = _tail->_next;
   }
 }
