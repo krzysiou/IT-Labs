@@ -1,5 +1,0 @@
-/Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab13/build/CMakeFiles/rebuild_cache.dir
-/Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab13/build/CMakeFiles/edit_cache.dir
-/Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab13/build/CMakeFiles/check.dir
-/Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab13/build/CMakeFiles/run.dir
-/Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab13/build/CMakeFiles/main.dir

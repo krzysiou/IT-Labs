@@ -1,19 +1,25 @@
 #pragma once
 #include <iostream>
 #include <cmath>
+#include <string>
 #include <vector>
-#include <cstring>
 
 using namespace std;
 
 class Argumenty {
-  friend class Suma;
-  friend class Pierwiastek;
-  public:
-    Argumenty(int);
-    Argumenty& operator ()(int, double);
-    void print(const string) const;
-    void print(const string, ostream &);
-  private:
-    vector<double> _args;
+    //befriend classes
+    friend class Suma;
+    friend class Pierwiastek;
+    public:
+        //creates vector with size of given value
+        Argumenty(int);
+        //overrides operator () to insert values into _args vector by providing (index, number)
+        Argumenty & operator ()(int, double);
+        //print vector _args using cout
+        void print(string);
+        //print vector _args using given ostream
+        void print(string, ostream &);
+    private:
+        //vector _args which holds arguments
+        vector<double> _args;
 };

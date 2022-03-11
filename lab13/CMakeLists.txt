@@ -8,7 +8,8 @@ if ("${CMAKE_SOURCE_DIR}" STREQUAL "${CMAKE_BINARY_DIR}")
   message(SEND_ERROR "In-source builds are not allowed.")
 endif ()
 
-#add_definitions(-DEKSTRA=1)
+#add_definitions(-DBASIC=1)
+#add_definitions(-DERROR=1)
 
 set(CMAKE_BUILD_TYPE Debug) #Release
 set(CMAKE_CXX_STANDARD 14)
@@ -21,10 +22,10 @@ include_directories(${INCLUDES})
 
 file(GLOB SOURCES "${PROJECT_SOURCE_DIR}/src/*.cpp")
 
-#add_library(Map STATIC ${SOURCES})
+#add_library(LibName STATIC ${SOURCES})
 
 add_executable(${PROJECT_NAME} main.cpp ${SOURCES})
-#target_link_libraries(${PROJECT_NAME} Map)
+#target_link_libraries(${PROJECT_NAME} LibName)
 
 add_custom_target(run ./${PROJECT_NAME})
 add_custom_target(check valgrind ./${PROJECT_NAME})
