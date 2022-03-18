@@ -1,0 +1,5 @@
+/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab03/build/CMakeFiles/rebuild_cache.dir
+/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab03/build/CMakeFiles/edit_cache.dir
+/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab03/build/CMakeFiles/check.dir
+/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab03/build/CMakeFiles/run.dir
+/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab03/build/CMakeFiles/main.dir

@@ -13,8 +13,8 @@ MyList::MyList(int n){
   }
 }
 
-MyList::MyList(const MyList& list) : MyList(){
-  std::cout << "KONST: Kopiujacy\n";
+MyList::MyList(const MyList& list){
+  cout << "KONST: Kopiujacy\n";
   _size = list._size;
   MyNode * temp = list._head->_next;
   for(int i = 0; i < list._size; i++){
@@ -32,12 +32,12 @@ MyList::MyList(const MyList& list) : MyList(){
 MyList::MyList(MyList&& list){
     _size = list._size;
     list._size = 0;
-    _head = std::exchange(list._head, nullptr);
-    _tail = std::exchange(list._tail, nullptr);
+    _head = exchange(list._head, nullptr);
+    _tail = exchange(list._tail, nullptr);
 }
 
-MyList::MyList(std::function<int(MyNode *)> fun, int size){
-    std::cout << "KONST: funkcja generujaca\n";
+MyList::MyList(function<int(MyNode *)> fun, int size){
+    cout << "KONST: funkcja generujaca\n";
     _size = size;
     _tail = _head = nullptr;
     for(int i = 0; i < size; i++)
@@ -52,9 +52,9 @@ MyList::MyList(std::function<int(MyNode *)> fun, int size){
     }
 }
 
-MyList::MyList(std::initializer_list<int> list){
+MyList::MyList(initializer_list<int> list){
     _size = list.size();
-    std::cout << "KONST: std::initializer_list\n";
+    cout << "KONST: std::initializer_list\n";
     const int * iterator = list.begin() + 1; 
     _head = _tail = nullptr;
     for(int i = 0; i < _size; i++){
@@ -107,7 +107,7 @@ void MyList::print() const{
 }
 
 MyList::~MyList(){
-    std::cout << "DESTRUKTOR (rozmiar = " << _size << ")\n"; 
+    cout << "DESTRUKTOR (rozmiar = " << _size << ")\n"; 
     if(_size != 0){
         MyNode * temp = _head->_next;
         while(_head != _tail){

@@ -23,8 +23,8 @@ class MyList {
     MyList(int);
     MyList(const MyList&);
     MyList(MyList&&);
-    MyList(std::function<int(MyNode*)>, int);
-    MyList(std::initializer_list<int>);
+    MyList(function<int(MyNode*)>, int);
+    MyList(initializer_list<int>);
     ~MyList();
     bool empty() const;
     int size() const;
