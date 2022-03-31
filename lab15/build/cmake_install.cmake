@@ -1,4 +1,4 @@
-# Install script for directory: /Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab4nauka
+# Install script for directory: /Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab4nauka/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

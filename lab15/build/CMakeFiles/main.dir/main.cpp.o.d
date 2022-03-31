@@ -1,6 +1,6 @@
 CMakeFiles/main.dir/main.cpp.o: \
-  /Users/krzysiektluszcz/Desktop/IV\ SEM/programowanie/lab4nauka/main.cpp \
-  /Users/krzysiektluszcz/Desktop/IV\ SEM/programowanie/lab4nauka/include/main.h \
+  /Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15/main.cpp \
+  /Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15/include/main.h \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/string \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/pthread.h \
@@ -223,5 +223,5 @@ CMakeFiles/main.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/bitset \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__bit_reference \
-  /Users/krzysiektluszcz/Desktop/IV\ SEM/programowanie/lab4nauka/include/zelazko.h \
-  /Users/krzysiektluszcz/Desktop/IV\ SEM/programowanie/lab4nauka/include/ubranie.h
+  /Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15/include/zelazko.h \
+  /Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15/include/ubranie.h

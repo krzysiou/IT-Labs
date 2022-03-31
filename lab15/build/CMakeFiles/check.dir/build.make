@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.21.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab4nauka"
+CMAKE_SOURCE_DIR = /Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab4nauka/build"
+CMAKE_BINARY_DIR = /Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15/build
 
 # Utility rule file for check.
 
@@ -82,6 +82,6 @@ CMakeFiles/check.dir/clean:
 .PHONY : CMakeFiles/check.dir/clean
 
 CMakeFiles/check.dir/depend:
-	cd "/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab4nauka/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab4nauka" "/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab4nauka" "/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab4nauka/build" "/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab4nauka/build" "/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab4nauka/build/CMakeFiles/check.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15 /Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15 /Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15/build /Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15/build /Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15/build/CMakeFiles/check.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/check.dir/depend
 

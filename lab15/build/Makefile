@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.21.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab4nauka"
+CMAKE_SOURCE_DIR = /Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab4nauka/build"
+CMAKE_BINARY_DIR = /Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab4nauka/build/CMakeFiles" "/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab4nauka/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15/build/CMakeFiles /Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab4nauka/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

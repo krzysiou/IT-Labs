@@ -23,8 +23,7 @@ class SpodnieBawelniane : public Ubranie {
 };
 
 
-class SpodnieJedwabne : public Ubranie
-{
+class SpodnieJedwabne : public Ubranie {
     public:
       SpodnieJedwabne(int);
       void PrasujKanty(Zelazko);

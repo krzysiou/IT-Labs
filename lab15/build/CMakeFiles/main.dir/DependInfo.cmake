@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab4nauka/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
-  "/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab4nauka/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.o" "gcc" "CMakeFiles/main.dir/src/main.cpp.o.d"
-  "/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab4nauka/src/ubranie.cpp" "CMakeFiles/main.dir/src/ubranie.cpp.o" "gcc" "CMakeFiles/main.dir/src/ubranie.cpp.o.d"
-  "/Users/krzysiektluszcz/Desktop/IV SEM/programowanie/lab4nauka/src/zelazko.cpp" "CMakeFiles/main.dir/src/zelazko.cpp.o" "gcc" "CMakeFiles/main.dir/src/zelazko.cpp.o.d"
+  "/Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
+  "/Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.o" "gcc" "CMakeFiles/main.dir/src/main.cpp.o.d"
+  "/Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15/src/ubranie.cpp" "CMakeFiles/main.dir/src/ubranie.cpp.o" "gcc" "CMakeFiles/main.dir/src/ubranie.cpp.o.d"
+  "/Users/krzysiektluszcz/Documents/KT/projects/IT-Labs/lab15/src/zelazko.cpp" "CMakeFiles/main.dir/src/zelazko.cpp.o" "gcc" "CMakeFiles/main.dir/src/zelazko.cpp.o.d"
   )
 
 # Targets to which this target links.
